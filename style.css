@@ -1,0 +1,84 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+.contenitore{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url(./img/sfondofoto.jpg);
+    background-repeat: no-repeat;background-size: cover;
+}
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;flex-direction: row;align-items: center;
+}
+#logo{
+    width: auto;min-width: 14%;
+    height: 70px;
+}
+#logo img{
+    width: 100%;height: 100%;
+}
+#select{
+    width: auto;
+    min-width: 20%;
+    height: 40px;
+    margin-left: 2%;
+}
+#select input{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+   outline: none;
+   border-radius: 8px;
+   border: none;
+}
+#select input:focus{
+    border: 2.5px solid rgb(0, 225, 255);
+}
+
+
+/*fine hwader*/
+
+#main{
+    width: 100%;height: calc(100vh - 100px);
+    position: relative;
+
+}
+.coverMain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./img/sfondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.invisibile{
+    opacity: 0;
+    transition: 1s;
+}
+.visibile{
+    opacity:  1;
+    transition: 1s;
+}
+.container-main{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.row{
+    display: flex; justify-content: center;
+}
+
+.card{
+    margin: 10px;
+    background:linear-gradient(rgb(128, 128, 128), black) ;color: white;padding: 30px 10px;position: relative;font-size: 0.7rem;
+    box-shadow: 5px 6px 6px rgb(245, 245, 245);
+}
+.bottone{
+    position: absolute;bottom: 3px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
